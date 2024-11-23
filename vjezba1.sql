@@ -4,5 +4,5 @@
 
 
 create table tablica(
-ime varchar (50)
+
 );
