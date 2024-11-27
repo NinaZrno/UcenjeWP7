@@ -27,3 +27,10 @@ prezime varchar (50),
 oib char(11),
 email varchar(100)
 );
+
+create table grupe(
+sifra int,
+naziv varchar(20),
+smjer int,
+predavac varchar(50)
+);
