@@ -1,13 +1,13 @@
 ﻿use master;
 go
-drop vjezbezatablice;
+drop database if exists vjezbezatablice;
 go
 create database vjezbezatablice;
 go
 
 use vjezbezatablice;
 
-create table ispitnirokovi(
+create table ispitnirok(
 sifra int,
 predmet varchar(50),
 vrstaispita int,
