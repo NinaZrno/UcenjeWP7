@@ -10,7 +10,7 @@ use vjezbezatablice;
 create table ispitnirok(
 sifra int,
 predmet varchar(50),
-vrstaispita int,
+vrstaispita varchar(25),
 datum datetime,
 pristupio varchar(50)
 );
