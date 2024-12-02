@@ -34,14 +34,14 @@ prezime varchar(25) not null,
 datum_rodenja datetime not null,
 pozicija varchar(25) not null,
 broj_adresa varchar(100) not null,
-klub varchar(50)
+klub int references klub(sifra)
 );
 
 create table trener(
 sifra int not null primary key identity(1,1),
 ime varchar(50) not null,
 prezime varchar(50) not null,
-klub varchar(50),
+klub int references klub(sifra),
 nacionalnost varchar(50),
 iskustvo bit
 );
