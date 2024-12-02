@@ -8,17 +8,17 @@ go
 use vjezbezatablice;
 
 create table ispitnirok(
-sifra int,
-predmet varchar(50),
-vrstaispita varchar(25),
-datum datetime,
-pristupio varchar(50)
+sifra int not null primary key identity (1,1),
+predmet varchar(50) not null,
+vrstaispita varchar(25) not null,
+datum datetime null,
+pristupio bit not null
 );
 
 
 create table pristupnici(
-ispitnirok int,
-student varchar(50),
-brojbodova int,
-ocjena int
+ispitnirok int not null references ispitnirok(sifra),
+student varchar(50) not null,
+brojbodova int not null,
+ocjena int not null
 );
