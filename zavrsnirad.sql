@@ -12,36 +12,34 @@ create table recepti(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
 vrsta varchar(60) not null,
-uputa varchar(1000) not null,
+uputa text not null,
 trajanje int not null
 
 );
 
-create table sastav(
+
+create table sastojci(
+sifra int not null primary key identity(1,1),
+naziv int not null references recepti(sifra),
+podrijetlo varchar(50) not null,
+nutritivna_deklaracija decimal(18,2) not null,
+energija decimal(18,2) not null,
+ugljikohidrati decimal(18,2) not null,
+masti decimal(18,2)not null,
+zasiceni_seceri decimal(18,2)not null,
+vlakna decimal(18,2)not null,
+bjelancevine decimal(18,2)not null,
+sol decimal(18,2) not null
+
+);
+
+
+create table sastavi(
 sifra int not null primary key identity(1,1),
 recept int not null references recepti(sifra),
-sastojak varchar(100) not null,
-kolicina bit not null,
+sastojak varchar(100) not null, 
+kolicina decimal(18,2) not null,
 napomena varchar(1000) not null
 
 );
 
-create table sastojci(
-sifra int not null primary key identity(1,1),
-naziv varchar(50) not null references recepti(sifra),
-podrijetlo varchar(50) not null,
-nutritivna_deklaracija decimal not null,
-energija decimal not null,
-ugljikohidrati decimal not null,
-masti decimal not null,
-zasiceni_seceri decimal not null,
-vlakna decimal not null,
-bjelancevine decimal not null,
-sol decimal not null
-
-);
-
--- 1
-insert into recepti
-(sifra,naziv,vrsta,uputa,trajanje)
-(1234,'Goveda juha','toplo predjelo','ulijte vodu u lonac',25:10)
