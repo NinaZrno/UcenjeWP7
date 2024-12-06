@@ -28,7 +28,7 @@ napomena varchar(1000) not null
 
 create table sastojci(
 sifra int not null primary key identity(1,1),
-naziv int not null references recepti(sifra),
+naziv varchar(50) not null references recepti(sifra),
 podrijetlo varchar(50) not null,
 nutritivna_deklaracija decimal not null,
 energija decimal not null,
