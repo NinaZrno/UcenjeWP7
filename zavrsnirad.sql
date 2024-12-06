@@ -3,7 +3,7 @@ use master;
 go
 drop database if exists zavrsnirad;
 go
-create database zavrsnirad;
+create database zavrsnirad collate Croatian_CI_AS;
 go
 use zavrsnirad;
 go
@@ -43,3 +43,7 @@ napomena varchar(1000) not null
 
 );
 
+-- 1
+insert into recepti
+(naziv, vrsta, uputa, trajanje) values
+('Govedi temeljac','Toplo predjelo',''
