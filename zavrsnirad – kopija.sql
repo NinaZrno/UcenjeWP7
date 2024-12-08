@@ -12,6 +12,7 @@ create table recepti(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
 vrsta varchar(60) not null,
+sastojci text not null,
 uputa text not null,
 trajanje int not null
 
@@ -20,7 +21,7 @@ trajanje int not null
 
 create table sastojci(
 sifra int not null primary key identity(1,1),
-naziv int not null references recepti(sifra),
+naziv text not null references recepti(sastojci),
 podrijetlo varchar(50) not null,
 nutritivna_deklaracija decimal(18,2) not null,
 energija decimal(18,2) not null,
@@ -45,5 +46,5 @@ napomena varchar(1000) not null
 
 -- 1
 insert into recepti
-(naziv, vrsta, uputa, trajanje) values
+(naziv, vrsta, , uputa, trajanje) values
 ('Govedi temeljac','Toplo predjelo',''

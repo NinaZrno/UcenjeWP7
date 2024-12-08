@@ -12,8 +12,9 @@ create table recepti(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
 vrsta varchar(60) not null,
+popis_sastojaka text not null,
 uputa text not null,
-trajanje int not null
+trajanje time(7) 
 
 );
 
@@ -43,7 +44,4 @@ napomena varchar(1000) not null
 
 );
 
--- 1
-insert into recepti
-(naziv, vrsta, uputa, trajanje) values
-('Govedi temeljac','Toplo predjelo',''
+
