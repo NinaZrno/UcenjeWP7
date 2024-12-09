@@ -35,7 +35,7 @@ sol decimal(18,2) not null
 
 create table sastavi(
 sifra int not null primary key identity(1,1),
-recept varchar(500) not null,
+recept int not null references recepti(sifra),
 sastojak int not null references sastojci(sifra),
 kolicina decimal(18,2) not null,
 napomena varchar(1000) 
@@ -95,22 +95,36 @@ masti, zasiceni_seceri, vlakna, bjelancevine, sol) values
 
 
 --1
-insert into sastavi(sifra,recept,sastojak, kolicina, napomena) values
-(1,'Fritule',1, 200.00, 'Jogurt drzati izvan hladnjaka 30 minuta prije koristenja');
+insert into sastavi(recept,sastojak, kolicina, napomena) values
+(1,1, 200.00, 'Jogurt drzati izvan hladnjaka 30 minuta prije koristenja');
 
 --2
-insert into sastavi(sifra,recept,sastojak, kolicina, napomena) values
-(1,'Fritule',2,1.00, 'Koristiti jaje srednje velicine');
+insert into sastavi(recept,sastojak, kolicina, napomena) values
+(1,2,1.00, 'Koristiti jaje srednje velicine');
 
 --3
-insert into sastavi(sifra,recept,sastojak, kolicina, napomena) values
-(1,'Fritule',3,7, 'Najbolje koristiti morsku sol.');
+insert into sastavi(recept,sastojak, kolicina) values
+(1,3,70.00);
 
 
 --4
-insert into sastavi(sifra,recept,sastojak, kolicina) values
-(1,'Fritule',4,1);
+insert into sastavi(recept,sastojak, kolicina) values
+(1,4,1);
 
 --5
-insert into sastavi(sifra,recept,sastojak, kolicina) values
-(1,'Fritule',
+insert into sastavi(recept,sastojak, kolicina) values
+(1,5,7.00);
+
+--6
+insert into sastavi(recept,sastojak, kolicina) values
+(1,6, 1.00);
+
+--7
+insert into sastavi(recept,sastojak, kolicina) values
+(1,7, 1.00);
+
+--8
+insert into sastavi(recept,sastojak, kolicina, napomena) values
+(1,8, 200.00, 'Najbolje koristit glatko brasno');
+
+
