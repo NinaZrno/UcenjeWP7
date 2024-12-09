@@ -58,8 +58,8 @@ masti, zasiceni_seceri, vlakna, bjelancevine, sol) values
 ( 1, 'Hrvatska', 1575.00, 24.90, 30.60, 80.00,220.00, 25.00, 7.00); 
 
 --1
-insert into sastavi(sastojak, kolicina, napomena) values
-('200ml tekuceg jogurta, 1 jaje, 70g secera, 1 vrecica
+insert into sastavi(sifra,recept,sastojak, kolicina, napomena) values
+(1,1,'200ml tekuceg jogurta, 1 jaje, 70g secera, 1 vrecica
 vanilin secera, prstohvat soli, 1/2 vrecice praska za pecivo,
 1 mala zlicica rakije, 200 g glatkog brasna, secer u prahu', 400.00,
 'Posluziti uz razne vrste dzemova.');
