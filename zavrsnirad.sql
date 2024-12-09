@@ -21,6 +21,7 @@ trajanje int
 create table sastojci(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
+mjerna_jedinica varchar(50) not null,
 podrijetlo varchar(50) not null,
 energija decimal(18,2) not null,
 ugljikohidrati decimal(18,2) not null,
