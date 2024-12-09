@@ -65,12 +65,12 @@ masti, zasiceni_seceri, vlakna, bjelancevine, sol) values
 --3
 insert into sastojci( naziv, podrijetlo, energija, ugljikohidrati,
 masti, zasiceni_seceri, vlakna, bjelancevine, sol) values 
-('Secer', 'Polinezija', 387, 0.00, 0.00, 100.00, 0.00, 0.00, 0.00)
+('Šećer', 'Polinezija', 387, 0.00, 0.00, 100.00, 0.00, 0.00, 0.00)
 
 --4
 insert into sastojci( naziv, podrijetlo, energija, ugljikohidrati,
 masti, zasiceni_seceri, vlakna, bjelancevine, sol) values 
-('Vanilin secer', 'Madagaskar', 387, 0.00, 0.00, 99.00, 0.00, 0.00, 1.00);
+('Vanilin sećer', 'Madagaskar', 387, 0.00, 0.00, 99.00, 0.00, 0.00, 1.00);
 
 --5
 insert into sastojci( naziv, podrijetlo, energija, ugljikohidrati,
@@ -80,7 +80,7 @@ masti, zasiceni_seceri, vlakna, bjelancevine, sol) values
 --6
 insert into sastojci( naziv, podrijetlo, energija, ugljikohidrati,
 masti, zasiceni_seceri, vlakna, bjelancevine, sol) values 
-('Prasak za pecivo', 'Engleska', 4.70, 0.00, 0.00, 0.00, 0.00, 1.25, 0.28);
+('Prašak za pecivo', 'Engleska', 4.70, 0.00, 0.00, 0.00, 0.00, 1.25, 0.28);
 
 --7
 insert into sastojci( naziv, podrijetlo, energija, ugljikohidrati,
@@ -90,17 +90,17 @@ masti, zasiceni_seceri, vlakna, bjelancevine, sol) values
 --8
 insert into sastojci( naziv, podrijetlo, energija, ugljikohidrati,
 masti, zasiceni_seceri, vlakna, bjelancevine, sol) values
-('Brasno','Srednji Istok', 364, 73.00, 1.70, 2.20, 2.70, 12.00, 0.12);
+('Brašno','Srednji Istok', 364, 73.00, 1.70, 2.20, 2.70, 12.00, 0.12);
 
 
 
 --1
 insert into sastavi(recept,sastojak, kolicina, napomena) values
-(1,1, 200.00, 'Jogurt drzati izvan hladnjaka 30 minuta prije koristenja');
+(1,1, 200.00, 'Jogurt držati izvan hladnjaka 30 minuta prije korištenja');
 
 --2
 insert into sastavi(recept,sastojak, kolicina, napomena) values
-(1,2,1.00, 'Koristiti jaje srednje velicine');
+(1,2,1.00, 'Koristiti jaje srednje veličine');
 
 --3
 insert into sastavi(recept,sastojak, kolicina) values
@@ -125,6 +125,8 @@ insert into sastavi(recept,sastojak, kolicina) values
 
 --8
 insert into sastavi(recept,sastojak, kolicina, napomena) values
-(1,8, 200.00, 'Najbolje koristit glatko brasno');
+(1,8, 200.00, 'Najbolje koristiti glatko brašno);
+
+
 
 
