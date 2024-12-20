@@ -9,52 +9,48 @@ namespace Ucenje
     internal class E01UlazIzlaz
     {
 
-
         public static void Izvedi()
         {
 
 
-
+            // ovdje pišemo kod
+            // Izlaz
             Console.WriteLine("Pozdrav svijetu!");
 
-
-            Console.Write("Ovo je u Liniji");
-            Console.WriteLine("Ovo je u istoj Liniji ali nakon ispisa ode u novu Liniju");
+            Console.Write("Ovo je u liniji ");
+            Console.WriteLine("ovo je u istoj liniji ali nakon ispisa ode u novu liniju");
 
             Console.WriteLine("1. red\n2. red\tnakon taba");
+
 
             Console.WriteLine(1);
             Console.WriteLine(true);
             Console.WriteLine(4.6);
 
 
+
+            // Ulaz
             int i;
             Console.Write("Unesi cijeli broj: ");
             i = int.Parse(Console.ReadLine());
 
+            // izlaz
             Console.WriteLine("Unio si {0}",i);
 
 
-            Console.WriteLine("Unesi ime grada: ");
+
+            // Ulaz
+            Console.Write("Unesi ime grada: ");
             string grad = Console.ReadLine();
 
-            Console.WriteLine("Unio si" + grad);
+            // izlaz
+            Console.WriteLine("Unio si " + grad);
 
 
-
-        }
-
-
-
-
+        } // kraj metoda
 
 
 
 
-
-
-
-
-
-    }
-}
+    }// kraj klasa
+} // kraj namespace

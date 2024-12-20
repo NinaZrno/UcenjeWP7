@@ -14,11 +14,13 @@ namespace Ucenje
 
             //Console.WriteLine("E02");
 
-            int cijeliBroj = 1;
+            // Tipovi podataka
 
-            bool logickaVrijednost = true;
+            int cijeliBroj = 1; // ovo je skraće kao da smo učitali od korisnika
 
-            float decimalniBroj = 4.5f;
+            bool logickaVrijednost = true; // zadana vrijednost je false
+
+            float decimalniBroj = 4.5F;
 
             double velikiDecimalniBroj = 3.14;
 
@@ -28,7 +30,7 @@ namespace Ucenje
 
             string nizZnakova = "abcdefg";
 
-            Console.WriteLine("Znak je broj {0}", (int)znak);
+            Console.WriteLine("Znak je broj {0}", (int)znak); // (int) je cast
 
             cijeliBroj = int.MaxValue;
 
@@ -37,19 +39,10 @@ namespace Ucenje
 
 
 
-
         }
-        
 
 
 
 
     }
-
-
-
-
-
-
-
 }
