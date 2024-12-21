@@ -8,22 +8,27 @@ namespace Ucenje
 {
     internal class E06Nizovi
     {
-
         public static void Izvedi()
         {
-            // motivacija: treba pohraniti prosjecne temp u 12 mjeseci
+            //motivacija: Treba pohraniti prosječne temperature u 12 mjeseci
 
             // krivi pristup
-            int sijecanj, veljaca, ozujak, /*...*/ prosinac; // ne raditi 12 varijabli
+            int sijecanj, veljaca, ozujak, /* .. */ prosinac; // NE RADITI 12 varijabli
 
-            int[] temp = new int[12]; // glavni problem nizova je sto u trenutku kreiranja moras znati koliko elemenata
 
-            // niz ima index i vrijednost 
-            temp[0] = -1; //sijecanj
-            temp[1] = 1; // veljaca
+            // end. Arrays
+            // još na HR polja
+            // uglata zagrada Alt Gr + F, zatvoreno je Alt Gr + G
+
+
+            // jednodimenzionalni niz
+            int[] temp = new int[12]; // gglavni problem nizova je što u trenutku kreiranja moraš znati koliko elemenata
+
+            // niz ima index i vrijednost
+            temp[0] = -1; //siječanj
+            temp[1] = 1; //veljača
             //...
-            temp[11] = 4; //prosinac
-
+            temp[11] = 4; // prosinac
 
             Console.WriteLine(temp[0]);
             Console.WriteLine(temp);
@@ -33,39 +38,46 @@ namespace Ucenje
             // dvodimenzionalni niz - tablica
             int[,] tablica =
             {
-
-                {1,2,3 },
-                {4,5,6 },
-                {5,6,7 }
-
+                { 1, 2, 3,2,2,2,2,2},
+                { 4, 5, 6,2,2,2,2,2},
+                { 7, 8, 9,2,2,2,2,2}
             };
 
-            //ispisite broj 6
+
+            // ispišite broj 6
             Console.WriteLine(tablica[1,2]);
 
-            //trodimenzionalni niz - kocka
-            int[,,] kocka = new int[10, 10, 10];
+
+            // trodimenzionalni niz - kocka
+            int[,,] kocka = new int [10,10,10];
+
             kocka[5, 5, 5] = 27;
-              
-                Console.WriteLine(kocka[5,5,5]);
 
+            Console.WriteLine(kocka[5, 5, 5]);
 
-            //cetverodimenzionalni niz- tesaarect
-            //multiverse
+            // četverodimezionalni niz - tesaarect 
+
+            // multiverse
             int[,,,,,,,] multiverse;
 
-            // zasto nam je bitan jednodimenzionalni niz
-            string grad = "Osijek";
-            //ispisi slovo j
+            // zašto nam je bitan jednodimenzionalni niz
+
+            string grad = "NajXbolji grad       je Osijek";
+
+            // ispiši slovo j
             // string je niz znakova
 
             Console.WriteLine(grad[3]);
 
             char znak = 'A';
 
-            //Ispisi zadnji znak
+            // ispišite zadnji znak
             Console.WriteLine(grad[grad.Length-1]);
+            Console.WriteLine(grad.Length);
+
 
         }
+
+
     }
-}
+    }
