@@ -3,10 +3,20 @@
 
 
 using Ucenje;
-E07SubotaZ6.Izvedi();
+
+E08For.Izvedi();
 
 
 
+//E07SubotaZ6.Izvedi();
+
+//E07SubotaZ5.Izvedi();
+
+//E07SubotaZ4.Izvedi();
+
+//E07SubotaZ3.Izvedi();
+
+//E07SubotaZ2.Izvedi();
 
 //E07SubotaZ1.Izvedi();
 
