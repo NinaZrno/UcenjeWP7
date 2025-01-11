@@ -4,9 +4,9 @@
 
 using Ucenje;
 
-E08For.Izvedi();
 
 
+//E08ForPetlja.Izvedi();
 
 //E07SubotaZ6.Izvedi();
 
