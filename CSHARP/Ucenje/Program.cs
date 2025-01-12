@@ -6,6 +6,22 @@ using Ucenje;
 
 
 
+//Zadaca09.Izvedi();
+
+//Zadaca07.Izvedi();
+
+//Zadaca06.Izvedi();
+
+//Zadaca05.Ivedi();
+
+//Zadaca04.Izvedi();
+
+//zadaca03.Izvedi();
+
+//Zadaca02.Izvedi();
+
+//ZadaPP.Izvedi();
+
 //E08ForPetlja.Izvedi();
 
 //E07SubotaZ6.Izvedi();
