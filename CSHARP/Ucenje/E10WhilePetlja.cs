@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Ucenje
 {
-    internal class Zadaca09
+    internal class E10WhilePetlja
     {
         public static void Izvedi()
         {
 
-           
+            Console.WriteLine("E10");
+
+
         }
     }
 }

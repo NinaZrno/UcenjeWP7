@@ -4,7 +4,7 @@
 
 using Ucenje;
 
-
+E10WhilePetlja.Izvedi();
 
 //Zadaca09.Izvedi();
 

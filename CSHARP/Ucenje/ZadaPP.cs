@@ -1,9 +1,8 @@
 ﻿using System;
 
-public class Class1
+public class ZadaPP
 {
-	public Class1()
-	{
+
 		public static void Izvedi()
 	{
 
@@ -30,4 +29,4 @@ public class Class1
 
 
 	}
-}
+

@@ -11,13 +11,7 @@ namespace Ucenje
         public static void Izvedi()
         {
             int brojSamoglasnika = 0;
-            foreach (char znak in unos)
-            {
-                if (znak == 'a' || znak == 'e' || znak == 'i' || znak == 'o' || znak == 'u')
-                {
-                    brojSamoglasnika++;
-                }
-            }
+            
         }
     }
 }

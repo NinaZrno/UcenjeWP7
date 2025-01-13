@@ -1,9 +1,7 @@
 ﻿using System;
 
-public class Class1
+public class Zadaca02
 {
-	public Class1()
-	{
 
 		public static void Izvedi()
 	{

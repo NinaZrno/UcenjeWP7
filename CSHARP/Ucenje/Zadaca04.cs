@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ucenje {
 
-    internal class zadaca04 
+    internal class Zadaca04 
 {
     
     public static void Izvedi()
@@ -16,7 +16,7 @@ namespace Ucenje {
             
                 int a = int.Parse(Console.ReadLine());
 
-            int a = 0; //a=Broj ocjena
+
 
             int b = 0; //b=zbroj ocjena
            
