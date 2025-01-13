@@ -4,7 +4,14 @@
 
 using Ucenje;
 
-E10WhilePetlja.Izvedi();
+
+E12Z02.Izvedi();
+
+//E12Z01.Izvedi();
+
+//E12ForEach.Izvedi();
+
+//E10WhilePetlja.Izvedi();
 
 //Zadaca09.Izvedi();
 
