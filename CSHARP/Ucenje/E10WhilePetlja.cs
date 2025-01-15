@@ -10,49 +10,51 @@ namespace Ucenje
     {
         public static void Izvedi()
         {
+            //Console.WriteLine("E10");
 
-           // Console.WriteLine("E10");
+            // while radi s bool
 
-            // while radi sa bool
-
-            // beskonacna petlja
+            // beskonačna petlja
             while (true)
             {
-                Console.WriteLine("Ispis iz beskonacne petlje nakon cega je break");
+                Console.WriteLine("Ispis iz beskonačne petlje nakon čega je break");
                 break;
             }
 
-
             int i = 0;
-            while (i++ < 10) // i++ kreni od nule
+            while (i++ < 10)
             {
                 Console.WriteLine(i);
+            
             }
 
-
-            // continue radi na isti nacin
-
-            int j = 10;
-            while ( i>= 10 && j++ < 10) // moze jos i || te !
+            Console.WriteLine("*****************");
+            // continue radi na isti način
+            int j = 0;
+            while(i>=10 && j++ < 10) // može još i || te !
             {
                 Console.WriteLine(i*j);
             }
 
-            // U for i while se ne mora uci
+            Console.WriteLine("---------------------------------");
+            // u for i while se ne mora ući
 
             int odBroja = 10;
-            int dobroja = 0;
-             for ( int x= odBroja; x< dobroja; x++)
-            {
-                Console.WriteLine(x);
+            int doBroja = 0;
+
+
+            for(int x=odBroja; x<doBroja; x++) 
+            { 
+                Console.WriteLine(x); 
             }
 
             bool uvjet = false;
 
             while (uvjet)
             {
-                Console.WriteLine("Nece se ispisati");
+                Console.WriteLine("Neće se ispisati");
             }
+
 
 
         }

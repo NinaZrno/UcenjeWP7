@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,54 +8,51 @@ namespace Ucenje
 {
     internal class E12ForEach
     {
-
         public static void Izvedi()
         {
             Console.WriteLine("E12");
 
+            // foreach je skraćeni for
+
             Console.Write("Unesi ime grada: ");
             string grad = Console.ReadLine();
 
-
-
-
-
-
-            // svako slovo grada ispisi jedno ispod drugog
-
-            for(int i =0; i < grad.Length; i++)
+            // svako slovo grada ispiši jedno ispod drugog
+            for(int i = 0; i < grad.Length; i++)
             {
                 Console.WriteLine(grad[i]);
             }
 
-
-
-            Console.WriteLine("*********************");
-
-           
-            
-            
-            
-            // u slucajevima kada idemo od pocetka do kraja (vecina puta)
+            Console.WriteLine("**************");
+            // u slučajevima kada idemo od početka do kraja (većina puta)
 
             foreach(char znak in grad)
             {
                 Console.WriteLine(znak);
             }
 
-            Console.WriteLine("*****************");
+            Console.WriteLine("**************");
 
+            for(int i=grad.Length-1;i>=0; i--)
+            {
+                Console.WriteLine(grad[i]);
+            }
 
+            Console.WriteLine("*********************");
 
-
-
-           for (int i =0; i< grad.Length; i++)
+            
+            for (int i = 0; i < grad.Length; i++)
             {
                 Console.WriteLine(grad[^(i+1)]);
             }
 
 
+            int[] brojevi = { 1, 2, 2, 3, 3, 3, 3, 3 };
 
+            foreach(int i in brojevi)
+            {
+                Console.WriteLine(i);
+            }
 
 
         }

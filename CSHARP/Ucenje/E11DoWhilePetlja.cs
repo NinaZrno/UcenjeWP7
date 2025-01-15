@@ -12,30 +12,17 @@ namespace Ucenje
         {
             //Console.WriteLine("E11");
 
-            // do while osigurava izvodenje minimalno jedne interacije
-
+            // do while osigurava izvođenje minimalno jedne iteracije
+            
             do
             {
                 Console.WriteLine("Izvede se jednom");
-
             } while (false);
-
-
-
-
-
 
             // sve ostalo navedeno u for (break i continue) te u while (&& || !) radi jednako i u do while
 
-            // ispisati sve parne brojeve od 2 do 28 koristeci do while
-
-
-
-            
-           
-
+            // Ispisati sve parne brojeve od 2 do 28 koristeći do while
 
         }
-
     }
 }

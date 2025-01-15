@@ -5,29 +5,19 @@
 using Ucenje;
 
 
-E12Z02.Izvedi();
 
-//E12Z01.Izvedi();
+
+
+E13Z02.Izvedi();
+//E13Z01.Izvedi();
+//E13TryCatch.Izvedi();
+//E12Z1.Izvedi();
 
 //E12ForEach.Izvedi();
 
+//E11DoWhilePetlja.Izvedi();
+
 //E10WhilePetlja.Izvedi();
-
-//Zadaca09.Izvedi();
-
-//Zadaca07.Izvedi();
-
-//Zadaca06.Izvedi();
-
-//Zadaca05.Ivedi();
-
-//Zadaca04.Izvedi();
-
-//zadaca03.Izvedi();
-
-//Zadaca02.Izvedi();
-
-//ZadaPP.Izvedi();
 
 //E08ForPetlja.Izvedi();
 
