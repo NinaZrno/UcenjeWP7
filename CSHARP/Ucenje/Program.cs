@@ -6,11 +6,15 @@ using Ucenje;
 
 
 
+E14Z03.Izvedi();
+
+//E14Z02.Izvedi();
+
+//E14Z01.Izvedi();
+
+//E14Metode.Izvedi();
 
 
-E13Z02.Izvedi();
-//E13Z01.Izvedi();
-//E13TryCatch.Izvedi();
 //E12Z1.Izvedi();
 
 //E12ForEach.Izvedi();
