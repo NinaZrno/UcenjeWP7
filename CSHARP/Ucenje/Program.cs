@@ -5,15 +5,24 @@
 using Ucenje;
 
 
+//new Ucenje.E19GSALE.Program();
 
-E14Z03.Izvedi();
+//new Ucenje.E18NasljedivanjePolimorfizam.Program("E18 drugi konstruktor");
 
-//E14Z02.Izvedi();
+// kreiranje objekte/instance klase Program
+//new Ucenje.E17KlasaObjekt.Program(); // poziva se konstruktor klase Program (5. vrsta metode)
 
-//E14Z01.Izvedi();
+E16Vjezbanje.Izvedi();
+
+//E15Rekurzija.Izvedi();
+
+//E14Z3.Izvedi();
 
 //E14Metode.Izvedi();
 
+//E13Z2.Izvedi();
+
+//E13TryCatch.Izvedi();
 
 //E12Z1.Izvedi();
 

@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
 using System.Text;
-using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Ucenje
@@ -14,59 +12,53 @@ namespace Ucenje
         {
             Console.WriteLine("E13");
 
+            
+
             int b = 0;
+
             while (true)
             {
-
                 Console.Write("Unesi broj: ");
                 try
                 {
-
                     b = int.Parse(Console.ReadLine());
-                    break;  
-
+                    break;
                 }
-
                 catch
                 {
                     Console.WriteLine("Niste unijeli broj");
                 }
-
-
             }
+
+
             Console.WriteLine(b);
 
 
+            Console.WriteLine("***********************");
 
 
-            Console.WriteLine("****************");
-
-
-            //unesi godine izmedu 1 i 110
+            // osiguraj unos godine između 1 i 110
 
             int godine = 0;
             string unos;
             int brojZnak;
             for(; ; )
             {
-                pocetak: // ovo se label/ labela
+                pocetak: // labela
                 Console.Write("Unesi svoje godine: ");
-                unos= Console.ReadLine();
+                unos = Console.ReadLine();
                 if (unos.Trim() == "")
                 {
-                    Console.WriteLine("Molim unesite vrijednost");
+                    Console.WriteLine("Molimo unesite vrijednost");
                     continue;
                 }
-            
-
                 try
                 {
-                
-                    godine= int.Parse(unos);
-                    // siguran si da je broj unesen ali ne znas koji
-                    if(godine <1 || godine > 110)
+                    godine = int.Parse(unos);
+                    // siguran si da je broj unesen ali ne znaš koji
+                    if (godine < 1 || godine > 110)
                     {
-                        Console.WriteLine("Nisi unio odgovarajuci broj( 1-110)");
+                        Console.WriteLine("Nisi unio odgovarajući broj (1-110)");
                         continue;
                     }
                     break;
@@ -74,27 +66,23 @@ namespace Ucenje
                 catch 
                 {
                     // unos 12O
-                    foreach( char znak in unos)
+                    foreach(char znak in unos)
                     {
-                        brojZnak= znak;
-                        if(brojZnak < 48 || brojZnak > 57)
+                        brojZnak = znak;
+                        if(brojZnak<48 || brojZnak > 57)
                         {
-                            Console.WriteLine("Uneseni znak {0} nije broj, on je dio abecede ...{1}, {2}, {3}...",
-                                znak, (char)(brojZnak-1), znak, (char)(brojZnak+1));
-                            goto pocetak; 
-
+                            Console.WriteLine("Uneseni znak {0} nije broj, " +
+                                "on je dio abecede ...{1}, {2}, {3}...", znak, 
+                                (char)(brojZnak-1),znak,(char)(brojZnak+1));
+                            goto pocetak;
                         }
                     }
-
-
-                    Console.WriteLine("Nisi unio broj.");
+                    Console.WriteLine("Nisi unio broj");
                     
                 }
             }
-        
 
-
-
+            Console.WriteLine("Imate {0} godina", godine);
 
         }
     }
