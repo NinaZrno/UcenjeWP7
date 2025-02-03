@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E19GSALE
 {
-    public  interface ISucelje
+    public interface ISucelje
     {
         public void OdradiPosao();
-
-
     }
 }

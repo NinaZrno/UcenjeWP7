@@ -88,7 +88,7 @@ namespace Ucenje.E18NasljedivanjePolimorfizam
 
             // Uskoro polimorfizam, jos malo pozornice
 
-            Obrada[] obrade = new Obrada[4];
+            Obrada[] obrade = new Obrada[4]; 
 
             obrade[0] = new ObradaUlazniRacun();
             obrade[1] = new ObradaUlazniRacun();

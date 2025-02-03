@@ -21,7 +21,7 @@ trajanje int
 create table sastojci(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
-mjerna_jedinica varchar(50) not null,
+mjerna_jedinica varchar(50) ,
 podrijetlo varchar(50) not null,
 energija decimal(18,2) not null,
 ugljikohidrati decimal(18,2) not null,
@@ -126,7 +126,7 @@ insert into sastavi(recept,sastojak, kolicina) values
 
 --8
 insert into sastavi(recept,sastojak, kolicina, napomena) values
-(1,8, 200.00, 'Najbolje koristiti glatko brašno);
+(1,8, 200.00, 'Najbolje koristiti glatko brašno');
 
 
 

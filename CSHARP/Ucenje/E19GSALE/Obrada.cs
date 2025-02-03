@@ -8,6 +8,7 @@ namespace Ucenje.E19GSALE
 {
     public class Obrada<T> : ISucelje where T : Entitet
     {
+
         public T? PredmetObrade { get; set; }
 
         public void OdradiPosao()
@@ -20,12 +21,12 @@ namespace Ucenje.E19GSALE
             Console.WriteLine(PredmetObrade?.Sifra);
         }
 
-
-        // ova metoda je depricated
-        [Obsolete("Koristi metodu Job()")] // atribute stavljaju iznad metode i oni su uputa za 3rd party alatima
+        // u programiranju se rijetko kada nesto briše, uvijek se dodaje
+        // ova metoda je deprecated
+        [Obsolete("Koristi metodu Job()")] // atributi se stavljaju iznad metode i oni su uputa 3rd party alatima
         public void Job()
         {
-            Console.WriteLine("Stara Metoda");
+            Console.WriteLine("Stara metoda");
         }
 
     }

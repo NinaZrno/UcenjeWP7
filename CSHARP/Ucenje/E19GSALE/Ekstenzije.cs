@@ -10,17 +10,15 @@ namespace Ucenje.E19GSALE
     {
         public static void Ispis(this Entitet entitet)
         {
-
             Console.WriteLine("Ispis iz ekstenzije");
             Console.WriteLine(entitet.Sifra);
         }
 
         public static void Odradi(this ISucelje sucelje)
         {
-            Console.WriteLine("odradujem posao u ekstenziji");
-
+            Console.WriteLine("Odraðujem posao u ekstenziji");
+            sucelje.OdradiPosao();
             Console.WriteLine("Odradio sam posao u ekstenziji");
         }
-
     }
 }
