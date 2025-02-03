@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using Ucenje.E20KonzolnaAplikacija.Model;
+﻿
 
 namespace Ucenje.E20KonzolnaAplikacija
 {
