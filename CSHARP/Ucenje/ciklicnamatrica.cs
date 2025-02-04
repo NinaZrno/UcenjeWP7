@@ -35,6 +35,10 @@ internal class ciklicnamatrica
         } while (Console.ReadLine().Trim().ToUpper() == "DA");
     }
 
+    
+    
+    
+    
     static void FillMatrix(int[,] matrix, int option)
     {
         // Implementacija različitih smjerova kretanja
