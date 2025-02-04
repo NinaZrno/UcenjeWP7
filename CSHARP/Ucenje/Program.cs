@@ -2,9 +2,20 @@
 
 
 
-using Ucenje;
 
-new Ucenje.E20KonzolnaAplikacija.Izbornik();
+
+
+
+
+
+//using Ucenje;
+
+
+generatorLozinki Izvedi();
+
+//ciklicnamatrica Izvedi();
+
+//new Ucenje.E20KonzolnaAplikacija.Izbornik();
 
 //new Ucenje.E19GSALE.Program();
 
